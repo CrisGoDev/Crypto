@@ -104,7 +104,7 @@ const CryptoDetails = () => {
                 Other Statistic
               </Title>
               <p>
-                AN overview showing the stats of all Cryptocurrencies
+                AN overview showing the stats of all Cryptocurrencies and many more, do you wanna see?
               </p>
 
             </Col>
