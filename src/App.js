@@ -1,5 +1,5 @@
 import React from "react";
-import {Switch, Route,Link,Routes} from 'react-router-dom'
+import { Route,Link,Routes} from 'react-router-dom'
 import {Layout,Typography, Space} from 'antd';
 import {Navbar,News,Homepage,Exchanges,Cryptocurrencies,CryptoDetails} from "./Components";
 import './App.css'

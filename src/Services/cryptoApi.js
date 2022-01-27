@@ -7,15 +7,11 @@ const cryptoApiHeaders={
     'x-rapidapi-key': '06689421e7mshbf3b8228c6d7a10p1c613djsn78e19ac784c2'
 
 }
-const cryptoApiHeadersPeriod={
-    'x-rapidapi-host': 'coinranking1.p.rapidapi.com',
-    'x-rapidapi-key': '06689421e7mshbf3b8228c6d7a10p1c613djsn78e19ac784c2'
 
-}
 const baseUrl='https://coinranking1.p.rapidapi.com'
 
 const createRequest=(url)=>({url, headers:cryptoApiHeaders});
-const createRequestPeriod=(url)=>({url, headers:cryptoApiHeaders});
+
 export const cryptoApi=createApi({
     reducerPath:'cryptoApi',
     baseQuery:fetchBaseQuery({ baseUrl }),
