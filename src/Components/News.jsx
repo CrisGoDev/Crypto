@@ -50,7 +50,7 @@ const News = ({simplified}) => {
             <a href={news.url} target='_blank' rel='noreferrer'>
               <div className='news-image-container'>
                 <Title className='news-title' level={4} > {news.name}</Title>
-                <img src={news?.image?.thumbnail?.contentUrl || demoImage} alt='News'/>
+                <img src={news?.image?.thumbnail?.contentUrl || demoImage} alt='News' className='new-image'/>
 
               </div>
               <p>
