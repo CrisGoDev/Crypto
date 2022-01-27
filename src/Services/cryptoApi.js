@@ -26,7 +26,12 @@ export const cryptoApi=createApi({
 
         getCryptosHistory:builder.query({
             query: ({coinId,timePeriod})=>createRequest(`coin/${coinId}/history?timePeriod=${timePeriod}`),
+        }),
+        getCryptosExchanges:builder.query({
+            query: (coinId)=>createRequest(`coin/${coinId}/exchanges`),
         })
+        // https://coinranking1.p.rapidapi.com/coin/Qwsogvtv82FCd/exchanges
+
         // getCryptosHistory:builder.query({
         //     query: ({coinId,timeperiod})=>createRequest(`coin/${coinId}`),
         // })
@@ -44,7 +49,8 @@ export const cryptoApi=createApi({
 export const{
     useGetCryptosQuery,
     useGetCryptosDetailsQuery,
-    useGetCryptosHistoryQuery
+    useGetCryptosHistoryQuery,
+    useGetCryptosExchangesQuery
 }=cryptoApi;
 // var options = {
 //     method: 'GET',

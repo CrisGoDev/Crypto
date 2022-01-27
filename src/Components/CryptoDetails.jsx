@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import HTMLReactParser from 'html-react-parser';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import millify from 'millify';
-import { Col, Row, Typography, Select } from 'antd'
+import { Col, Row, Typography, Select,Button } from 'antd'
 import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined, StopOutlined, TrophyOutlined, CheckOutlined, NumberOutlined, ThunderboltOutlined } from '@ant-design/icons';
 import { useGetCryptosDetailsQuery , useGetCryptosHistoryQuery} from '../Services/cryptoApi';
 import LineChart from './LineChart';
@@ -52,6 +53,7 @@ const CryptoDetails = () => {
 
   return (
     <Col className='coin-detail-container'>
+      <Title level={3} className='show-more' ><Link to={`/exchanges/${coinId}` }>Exhanges</Link></Title>
       <Col className='coin-heading-container'>
         <Title level={2} className='coin-name'>
           {cryptoDetails.name}
@@ -62,7 +64,7 @@ const CryptoDetails = () => {
           View value Statistic market cap and supply
         </p>
         </Col>
-        Brooo
+        
         <Select defaultValue="7d"
           className='select-time-period' placeholder="select Time"
           onChange={(value) => setTimeperiod(value)}
