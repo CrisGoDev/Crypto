@@ -404,6 +404,6 @@ width: 70%;
      border-radius: 50%;
  }
  .new-image{
-     height: 100px;
+     height: 20%;
      object-fit: cover;
  }
