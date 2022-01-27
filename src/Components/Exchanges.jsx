@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import millify from 'millify';
-import { Collapse, Row, Col, Typography, Avatar, Button } from 'antd';
+import { Collapse, Row, Col, Typography, Avatar } from 'antd';
 import Ver from './Ver';
 import { useParams } from 'react-router-dom';
 // import { useGetCryptosExchangesQuery } from '../services/cryptoApi';

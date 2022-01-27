@@ -2,7 +2,7 @@ import React from 'react';
 import { useState ,useEffect} from 'react';
 import { Button,Menu, Typography, Avatar } from 'antd';
 import {Link} from 'react-router-dom';
-import { HomeOutlined,MoneyCollectOutlined,BulbOutlined, MenuOutlined } from '@ant-design/icons/lib/icons';
+import { HomeOutlined,BulbOutlined, MenuOutlined } from '@ant-design/icons/lib/icons';
 import icon from './images/cryptocurrency.png'
 const Navbar = () => {
     const [activedmenu, setActivemenu]=useState(true);
